@@ -9,7 +9,7 @@ public class Conn {
 
     Conn() {
         try {
-            c = DriverManager.getConnection("jdbc:mysql:///ebs", "root", "Navaratri@2022");
+            c = DriverManager.getConnection("jdbc:mysql:///ebs", "<your SQL username>", "<Your SQL Password>");
             s = c.createStatement();
         } catch (Exception e) {
             e.printStackTrace();
